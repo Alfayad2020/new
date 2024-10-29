@@ -1,0 +1,25 @@
+html,body{
+    margin: 0;
+    padding: 20px 0;
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    
+}
+/*styling my div*/
+div {
+    
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    height: 50vh;
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 20px;
+}
+ol {
+    text-align: start;
+    margin-left: 120px;
+}
+

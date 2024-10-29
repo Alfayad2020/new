@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 40%;
+
+    }
+    .btn{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+
+    }
+    .button{
+        width: 100px;
+        font-size: 50px;
+    }
+    input{
+        width: 100%;
+        height: 20pxx                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+    }
+    form{
+        width: 100%;
+    }
+    .button{
+        height: 60px;
+    }
+    .display{
+        height: 60px;
+    }
+    
+
+    
+</style>
+<body>
+        
+    <div class="container">
+        
+    <form>
+        <div class="display"><input type="text" name="display"></div>
+        
+        
+        <div class="btn">
+            <input class="button" type="button" value="1" onclick="display.value +='1'">
+            <input class="button" type="button" value="2" onclick="display.value +='2'">
+            <input class="button" type="button" value="3" onclick="display.value +='3'">
+            <input class="button" type="button" value="4" onclick="display.value +='4'">
+            <input class="button" type="button" value="AC" onclick="display.value =''">
+        </div>
+        <div class="btn">
+            <input class="button" type="button" value="5" onclick="display.value +='5'">
+            <input class="button" type="button" value="6" onclick="display.value +='6'">
+            <input class="button" type="button" value="7" onclick="display.value +='7'">
+            <input class="button" type="button" value="8" onclick="display.value +='8'">
+            <input class="button" type="button" value="DEL" onclick="display.value = display.value.toString().slice(0, -1)">
+        </div>
+        <div class="btn">
+            <input class="button" type="button" value="9" onclick="display.value +='9'">
+            <input class="button" type="button" value="0" onclick="display.value +='0'">
+            <input class="button" type="button" value="." onclick="display.value +='.'">
+            <input class="button" type="button" value="+" onclick="display.value +='+'">
+            <input class="button" type="button" value="/" onclick="display.value +='/'">
+        </div>
+        <div class="btn">
+            <input class="button" type="button" value="*" onclick="display.value +='*'">
+            <input class="button" type="button" value="-" onclick="display.value +='-'">
+            <input class="button" type="button" value="=" onclick="display.value = eval(display.value)">
+
+        </div>
+    </form>
+</div>
+</body>
+</html>

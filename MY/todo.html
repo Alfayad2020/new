@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center;">
+    <div style="width: 60%;">
+    <input type="number" id="value1" placeholder="input number"><br><br>
+    <input type="number" id="value1" placeholder="input another number"><br><br>
+    <button onclick={myFunction()}>check answer</button>
+    <p>your result is</p>
+    <p id="output"></p>
+    </div>
+    <script>
+        //function myFunction(){}
+        const myFunction = () => {
+            //retrieve the value we want to calculate
+            let value1 = Number(document.getElementById("value1").value);
+            let value2 = Number (document.getElementById("value1").value);
+            //checking wether we are correct
+            console.log('value1, value2');
+            //declare a variable for result
+            let result = value1 + value2;
+
+            //RETURN THE CALCULATED RESULT
+            return document.getElementById("output").innerHTML = result
+            //array stuff
+            let fruit = ["mango","banana","apple"]
+            console.log('fruit');
+        }
+        //creating array using arrays functions
+        const cars = new Array("benz","toyota","corolla",);
+        console.log('cars');
+        const provision = Array("maize","beans");
+
+    </script>
+</body>
+</html>
